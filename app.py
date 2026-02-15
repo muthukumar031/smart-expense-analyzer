@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 import os
 
+
 # ---------------- CONFIG ----------------
 st.set_page_config(page_title="Smart Expense Analyzer", layout="centered")
 
@@ -129,4 +130,5 @@ if "user" in st.session_state:
     if st.sidebar.button("Logout"):
         del st.session_state["user"]
         st.rerun()
+
 
